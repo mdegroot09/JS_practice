@@ -99,8 +99,8 @@ let honestPoliticians = [] //truthy
 const magicNumber = 42
 let adder = 4
 
-function notSoMagicNumGenerator(num){
-    let notSoMagicNumber = num + adder;
+function notSoMagicNumGenerator(magicNumber, adder){
+    let notSoMagicNumber = magicNumber + adder;
     return notSoMagicNumber
 }
 
@@ -108,8 +108,8 @@ function imBroken(){
     return magicNumber + notSoMagicNumber;
 }
 
-notSoMagicNumber = notSoMagicNumGenerator(magicNumber);
-imBroken()
+notSoMagicNumber = notSoMagicNumGenerator(magicNumber, adder);
+sum = imBroken()
 
 //Here's another function that needs a fixin'
 //uncomment to get working on it
